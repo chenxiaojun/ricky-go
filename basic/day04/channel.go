@@ -30,7 +30,7 @@ func main() {
 	}()
 	ch <- 3
 	ch <- 8 // 如果把赋值 提到 子线程后面
-	// 就无需让子程序休眠，原因是channel在主线程被赋值。 就会导致主线程阻塞。 执到channel中到子线程被取出
+	// 就无需让子程序休眠，原因是channel在主线程被赋值。 就会导致主线程阻塞。 直到channel中的子线程被取出
 	go func() {
 		v := <-ch
 		fmt.Println(v)
