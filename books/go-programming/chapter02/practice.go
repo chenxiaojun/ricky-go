@@ -18,6 +18,16 @@ func main() {
 	for i := 1; i < 6; i++ {
 		fmt.Println(i)
 	}
+
+	e := make(map[string]string)
+	e["name"] = "Ricky"
+	fmt.Println(e["name"])
+
+	_, ok := e["name"]
+	fmt.Println(ok)
+
+	_, t := e["test"]
+	fmt.Println(t)
 }
 
 func a1() *int {
