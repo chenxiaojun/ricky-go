@@ -2,49 +2,89 @@ package main
 
 import (
 	"sync"
-	"io"
-	"errors"
 	"log"
+	"time"
+	"io"
+	"sync/atomic"
+	"math/rand"
+	"github.com/chenxiaojun/ricky-golib"
+	"fmt"
 )
 
-// 定义一个资源池已经关闭的错误
-var ErrPoolClosed = errors.New("资源池已经关闭。")
+const (
+	// 模拟最大的goroutine
+	maxGoroutine = 5
+	// 资源池的大小
+	poolRes = 2
+)
 
-// 一个安全的资源池， 被管理的资源必须都实现io.Close接口
-type Pool struct {
-	m sync.Mutex // 互斥锁
-	res chan io.Closer // 有缓冲的通道，用于保存共享的资源
-	factory func() (io.Closer, error) // 用于创建一个新的资源
-	closed bool // 用于判断资源池是否被关闭
-}
-
-/**
-	fn 创建新资源的函数，size指定资源池的大小
- */
-func New(fn func() (io.Closer, error), size uint) (*Pool, error) {
-	if size <= 0 {
-		return nil, errors.New("size的值太小了。")
+func main() {
+	for i := 0; i < 10; i++ {
+		// 生成唯一ID
+		fmt.Println(atomic.AddInt32(&idCounter, 1))
 	}
-	return &Pool{
-		factory: fn,
-		res: make(chan io.Closer, size),
-	}, nil
+
+	// 等待任务完成
+	var wg sync.WaitGroup
+	wg.Add(maxGoroutine)
+
+	p, err := pool.New(createConnection, poolRes)
+	if err != nil {
+		log.Println(err)
+		return
+	}
+
+	for query := 0; query < maxGoroutine; query++ {
+		go func(q int) {
+			dbQuery(q, p)
+			wg.Done()
+		}(query)
+	}
+
+	wg.Wait()
+	log.Println("开始关闭资源池")
+	p.Close()
 }
 
-// 从资源池里获取资源
-func (p *Pool) Acquire() (io.Closer, error) {
-	select {
-	case r, ok := <-p.res:
-		log.Println("Acquire: 共享资源")
-		if !ok {
-			return nil, ErrPoolClosed
-		}
-		return r, nil
-	default:
-		log.Println("Acquire: 新生成资源")
-		return p.factory()
+// 模拟数据库查询
+func dbQuery(query int, pool *pool.Pool) {
+	conn, err := pool.Acquire()
+	if err != nil {
+		log.Println(err)
+		return
 	}
+	defer pool.Release(conn)
+
+	//模拟查询
+	time.Sleep(time.Duration(rand.Intn(1000)) * time.Millisecond)
+	log.Printf("第%d个查询，使用的是ID为%d的数据库连接", query, conn.(*dbConnection).ID)
 }
+
+//数据库连接
+type dbConnection struct {
+	ID int32//连接的标志
+}
+//实现io.Closer接口
+func (db *dbConnection) Close() error {
+	log.Println("关闭连接", db.ID)
+	return nil
+}
+var idCounter int32
+//生成数据库连接的方法，以供资源池使用
+func createConnection() (io.Closer, error) {
+	//并发安全，给数据库连接生成唯一标志
+	id := atomic.AddInt32(&idCounter, 1)
+	return &dbConnection{id}, nil
+}
+
+
+
+
+
+
+
+
+
 
 
 
