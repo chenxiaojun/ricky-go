@@ -7,8 +7,8 @@ import (
 )
 
 /**
-	使用context监控多个goroutine
- */
+使用context监控多个goroutine
+*/
 func main() {
 	ctx, cancel := context.WithCancel(context.Background())
 	go watch(ctx, " [监控1] ")
@@ -22,7 +22,7 @@ func main() {
 	time.Sleep(5 * time.Second)
 }
 
-func watch (ctx context.Context, name string) {
+func watch(ctx context.Context, name string) {
 	for {
 		select {
 		case <-ctx.Done():
@@ -30,7 +30,7 @@ func watch (ctx context.Context, name string) {
 			return
 		default:
 			fmt.Println(name, "goroutine监控中...")
-			time.Sleep(2*time.Second)
+			time.Sleep(2 * time.Second)
 		}
 	}
 }

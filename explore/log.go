@@ -1,9 +1,9 @@
 package main
 
 import (
+	"io"
 	"log"
 	"os"
-	"io"
 )
 
 //import "log"
@@ -19,9 +19,9 @@ import (
 //}
 
 var (
-	Info *log.Logger
+	Info    *log.Logger
 	Warning *log.Logger
-	Error *log.Logger
+	Error   *log.Logger
 )
 
 func init() {
@@ -29,9 +29,9 @@ func init() {
 	if err != nil {
 		log.Fatalln("打开日志文件关联：", err)
 	}
-	Info = log.New(os.Stdout, "Info:", log.Ldate | log.Ltime | log.Lshortfile)
-	Warning = log.New(os.Stdout, "Warning:", log.Ldate | log.Ltime | log.Lshortfile)
-	Error = log.New(io.MultiWriter(os.Stderr,errFile),"Error:",log.Ldate | log.Ltime | log.Lshortfile)
+	Info = log.New(os.Stdout, "Info:", log.Ldate|log.Ltime|log.Lshortfile)
+	Warning = log.New(os.Stdout, "Warning:", log.Ldate|log.Ltime|log.Lshortfile)
+	Error = log.New(io.MultiWriter(os.Stderr, errFile), "Error:", log.Ldate|log.Ltime|log.Lshortfile)
 }
 
 func main() {
@@ -39,22 +39,3 @@ func main() {
 	Warning.Printf("age：%d\n", 11)
 	Error.Println("Ricky的测试")
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

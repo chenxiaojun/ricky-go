@@ -1,10 +1,10 @@
 package main
 
 import (
-	"log"
-	"time"
 	"github.com/chenxiaojun/ricky-golib/exercise"
+	"log"
 	"os"
+	"time"
 )
 
 func main() {

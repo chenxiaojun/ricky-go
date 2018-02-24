@@ -6,7 +6,7 @@ import (
 )
 
 type Person struct {
-	age int
+	age  int
 	name string
 }
 
@@ -22,7 +22,7 @@ func GetTime() time.Time {
 
 func main() {
 	fmt.Println(GetTime())
-	ricky := Person {
+	ricky := Person{
 		18, "Ricky",
 	}
 	fmt.Println(ricky.getName())

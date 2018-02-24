@@ -1,14 +1,14 @@
 package main
 
 import (
-	"sync"
-	"log"
-	"time"
-	"io"
-	"sync/atomic"
-	"math/rand"
-	"github.com/chenxiaojun/ricky-golib"
 	"fmt"
+	"github.com/chenxiaojun/ricky-golib"
+	"io"
+	"log"
+	"math/rand"
+	"sync"
+	"sync/atomic"
+	"time"
 )
 
 const (
@@ -62,58 +62,20 @@ func dbQuery(query int, pool *pool.Pool) {
 
 //数据库连接
 type dbConnection struct {
-	ID int32//连接的标志
+	ID int32 //连接的标志
 }
+
 //实现io.Closer接口
 func (db *dbConnection) Close() error {
 	log.Println("关闭连接", db.ID)
 	return nil
 }
+
 var idCounter int32
+
 //生成数据库连接的方法，以供资源池使用
 func createConnection() (io.Closer, error) {
 	//并发安全，给数据库连接生成唯一标志
 	id := atomic.AddInt32(&idCounter, 1)
 	return &dbConnection{id}, nil
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

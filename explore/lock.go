@@ -1,8 +1,8 @@
 package main
 
 import (
-	"sync"
 	"fmt"
+	"sync"
 )
 
 var count = 0
@@ -15,7 +15,7 @@ func main() {
 	//	go read(i)
 	//}
 
-	for i :=0; i < 3; i++ {
+	for i := 0; i < 3; i++ {
 		go write(i)
 	}
 

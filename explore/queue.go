@@ -2,14 +2,14 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
 	"sync"
 	"time"
-	"math/rand"
 )
 
 // 用户 手机号
 type user struct {
-	id int
+	id   int
 	name string
 }
 
@@ -19,7 +19,7 @@ func init() {
 	// 初始化用户
 	for i := 0; i < 100000; i++ {
 		user := user{
-			id: i,
+			id:   i,
 			name: GetRandomString(4),
 		}
 		users = append(users, user)
@@ -27,6 +27,7 @@ func init() {
 }
 
 var wg sync.WaitGroup
+
 func main() {
 	start := time.Now()
 	// 创建要处理到用户数对应到协程数量
@@ -48,7 +49,7 @@ func sendMsg(user user) {
 
 // 随机用户名
 // len要返回的长度
-func  GetRandomString(l int) string {
+func GetRandomString(l int) string {
 	str := "0123456789abcdefghijklmnopqrstuvwxyz"
 	bytes := []byte(str)
 	result := []byte{}

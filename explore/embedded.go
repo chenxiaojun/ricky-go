@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 type user struct {
-	name string
+	name  string
 	email string
 }
 
@@ -12,7 +12,6 @@ type admin struct {
 	user
 	level string
 }
-
 
 // 可以组合接口
 type Aer interface {
@@ -39,7 +38,7 @@ func (w welcome) B() int {
 }
 
 func main() {
-	ad := admin{ user{ "Ricky", "rickycxj@gmail.com" }, "high" }
+	ad := admin{user{"Ricky", "rickycxj@gmail.com"}, "high"}
 	fmt.Println(ad.user.email) // rickycxj@gmail.com
 
 	var c Cer

@@ -83,5 +83,5 @@ func main() {
 
 func modify(slice [5]int) {
 	fmt.Printf("%p\n", &slice) // 切片的地址变了
-	slice[1] = 10 // 不改变main里面slice的值
+	slice[1] = 10              // 不改变main里面slice的值
 }
