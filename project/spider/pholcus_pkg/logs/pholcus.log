@@ -1,0 +1,237 @@
+2018/02/24 11:21:39 [I]                                                                                                ！！当前运行模式为：[ 单机 ] 模式！！
+2018/02/24 11:21:44 [E] Mysql：Error 1049: Unknown database 'pholcus'
+
+2018/02/24 11:21:44 [I]  *     不使用代理IP
+
+2018/02/24 11:21:44 [I]  *     执行任务总数(任务数[*自定义配置数])为 1 个
+
+2018/02/24 11:21:44 [I]  *     采集引擎池容量为 1
+
+2018/02/24 11:21:44 [I]  *     并发协程最多 20 个
+
+2018/02/24 11:21:44 [I]  *     默认随机停顿 150~600 毫秒
+
+2018/02/24 11:21:44 [P]  *                                                                                                 —— 开始抓取，请耐心等候 ——
+2018/02/24 11:21:44 [I]  *********************************************************************************************************************************** 
+2018/02/24 11:21:44 [E]  *     Fail  [读取成功记录][mysql]: Error 1049: Unknown database 'pholcus'
+
+2018/02/24 11:21:44 [E]  *     Fail  [取出失败记录][mysql]: Error 1049: Unknown database 'pholcus'
+
+2018/02/24 11:21:44 [D]  *     Start: https://www.lagou.com/zhaopin/go/?filterOption=3
+2018/02/24 11:21:44 [I]  *     Success: https://www.lagou.com/zhaopin/go/?filterOption=3
+
+2018/02/24 11:21:44 [D]  *     Start: https://www.lagou.com/zhaopin/go/2/
+2018/02/24 11:21:45 [I]  *     Success: https://www.lagou.com/zhaopin/go/2/
+
+2018/02/24 11:21:45 [D]  *     Start: https://www.lagou.com/zhaopin/go/3/
+2018/02/24 11:21:45 [I]  *     Success: https://www.lagou.com/zhaopin/go/3/
+
+2018/02/24 11:21:45 [D]  *     Start: https://www.lagou.com/zhaopin/go/4/
+2018/02/24 11:21:46 [I]  *     Success: https://www.lagou.com/zhaopin/go/4/
+
+2018/02/24 11:21:46 [D]  *     Start: https://www.lagou.com/zhaopin/go/5/
+2018/02/24 11:21:46 [I]  *     Success: https://www.lagou.com/zhaopin/go/5/
+
+2018/02/24 11:21:46 [D]  *     Start: https://www.lagou.com/zhaopin/go/6/
+2018/02/24 11:21:47 [I]  *     Success: https://www.lagou.com/zhaopin/go/6/
+
+2018/02/24 11:21:47 [D]  *     Start: https://www.lagou.com/zhaopin/go/7/
+2018/02/24 11:21:47 [I]  *     Success: https://www.lagou.com/zhaopin/go/7/
+
+2018/02/24 11:21:47 [D]  *     Start: https://www.lagou.com/zhaopin/go/8/
+2018/02/24 11:21:48 [I]  *     Success: https://www.lagou.com/zhaopin/go/8/
+
+2018/02/24 11:21:48 [D]  *     Start: https://www.lagou.com/zhaopin/go/9/
+2018/02/24 11:21:48 [I]  *     Success: https://www.lagou.com/zhaopin/go/9/
+
+2018/02/24 11:21:48 [D]  *     Start: https://www.lagou.com/zhaopin/go/10/
+2018/02/24 11:21:49 [I]  *     Success: https://www.lagou.com/zhaopin/go/10/
+
+2018/02/24 11:21:49 [D]  *     Start: https://www.lagou.com/zhaopin/go/11/
+2018/02/24 11:21:49 [I]  *     Success: https://www.lagou.com/zhaopin/go/11/
+
+2018/02/24 11:21:49 [D]  *     Start: https://www.lagou.com/zhaopin/go/12/
+2018/02/24 11:21:50 [I]  *     Success: https://www.lagou.com/zhaopin/go/12/
+
+2018/02/24 11:21:50 [D]  *     Start: https://www.lagou.com/zhaopin/go/13/
+2018/02/24 11:21:50 [I]  *     Success: https://www.lagou.com/zhaopin/go/13/
+
+2018/02/24 11:21:50 [D]  *     Start: https://www.lagou.com/zhaopin/go/14/
+2018/02/24 11:21:51 [I]  *     Success: https://www.lagou.com/zhaopin/go/14/
+
+2018/02/24 11:21:51 [D]  *     Start: https://www.lagou.com/zhaopin/go/15/
+2018/02/24 11:21:51 [I]  *     Success: https://www.lagou.com/zhaopin/go/15/
+
+2018/02/24 11:21:51 [D]  *     Start: https://www.lagou.com/zhaopin/go/16/
+2018/02/24 11:21:51 [I]  *     Success: https://www.lagou.com/zhaopin/go/16/
+
+2018/02/24 11:21:51 [D]  *     Start: https://www.lagou.com/zhaopin/go/17/
+2018/02/24 11:21:52 [I]  *     Success: https://www.lagou.com/zhaopin/go/17/
+
+2018/02/24 11:21:52 [D]  *     Start: https://www.lagou.com/zhaopin/go/18/
+2018/02/24 11:21:52 [I]  *     Success: https://www.lagou.com/zhaopin/go/18/
+
+2018/02/24 11:21:52 [D]  *     Start: https://www.lagou.com/zhaopin/go/19/
+2018/02/24 11:21:53 [I]  *     Success: https://www.lagou.com/zhaopin/go/19/
+
+2018/02/24 11:21:53 [D]  *     Start: https://www.lagou.com/zhaopin/go/20/
+2018/02/24 11:21:53 [I]  *     Success: https://www.lagou.com/zhaopin/go/20/
+
+2018/02/24 11:21:53 [D]  *     Start: https://www.lagou.com/zhaopin/go/21/
+2018/02/24 11:21:54 [I]  *     Success: https://www.lagou.com/zhaopin/go/21/
+
+2018/02/24 11:21:54 [D]  *     Start: https://www.lagou.com/zhaopin/go/22/
+2018/02/24 11:21:54 [I]  *     Success: https://www.lagou.com/zhaopin/go/22/
+
+2018/02/24 11:21:54 [D]  *     Start: https://www.lagou.com/zhaopin/go/23/
+2018/02/24 11:21:55 [I]  *     Success: https://www.lagou.com/zhaopin/go/23/
+
+2018/02/24 11:21:55 [D]  *     Start: https://www.lagou.com/zhaopin/go/24/
+2018/02/24 11:21:55 [I]  *     Success: https://www.lagou.com/zhaopin/go/24/
+
+2018/02/24 11:21:55 [D]  *     Start: https://www.lagou.com/zhaopin/go/25/
+2018/02/24 11:21:56 [I]  *     Success: https://www.lagou.com/zhaopin/go/25/
+
+2018/02/24 11:21:56 [D]  *     Start: https://www.lagou.com/zhaopin/go/26/
+2018/02/24 11:21:56 [I]  *     Success: https://www.lagou.com/zhaopin/go/26/
+
+2018/02/24 11:21:56 [D]  *     Start: https://www.lagou.com/zhaopin/go/27/
+2018/02/24 11:21:56 [I]  *     Success: https://www.lagou.com/zhaopin/go/27/
+
+2018/02/24 11:21:56 [D]  *     Start: https://www.lagou.com/zhaopin/go/28/
+2018/02/24 11:21:57 [I]  *     Success: https://www.lagou.com/zhaopin/go/28/
+
+2018/02/24 11:21:57 [D]  *     Start: https://www.lagou.com/zhaopin/go/29/
+2018/02/24 11:21:57 [I]  *     Success: https://www.lagou.com/zhaopin/go/29/
+
+2018/02/24 11:21:57 [D]  *     Start: https://www.lagou.com/zhaopin/go/30/
+2018/02/24 11:21:58 [I]  *     Success: https://www.lagou.com/zhaopin/go/30/
+
+2018/02/24 11:21:58 [I]  * 
+2018/02/24 11:21:58 [P]  *     Fail  [数据输出：拉勾-岗位 | KEYIN： | 批次：1]   数据 450 条！ [ERROR]  Mysql数据库链接失败: Error 1049: Unknown database 'pholcus'
+
+2018/02/24 11:21:58 [I]  * 
+2018/02/24 11:21:58 [P]  *     [任务小计：拉勾-岗位 | KEYIN：]   共采集数据 450 条，用时 14.245985599s！
+
+2018/02/24 11:21:58 [I]  * 
+2018/02/24 11:21:58 [I]  *********************************************************************************************************************************** 
+2018/02/24 11:21:58 [I]  * 
+2018/02/24 11:21:58 [P]  *                            —— 本次合计采集【数据 450 条】， 实爬【成功 30 URL + 失败 0 URL = 合计 30 URL】，耗时【14.246002509s】 ——
+2018/02/24 11:21:58 [I]  * 
+2018/02/24 11:21:58 [I]  *********************************************************************************************************************************** 
+2018/02/24 11:23:07 [I]  *     不使用代理IP
+
+2018/02/24 11:23:07 [I]  *     执行任务总数(任务数[*自定义配置数])为 1 个
+
+2018/02/24 11:23:07 [I]  *     采集引擎池容量为 1
+
+2018/02/24 11:23:07 [I]  *     并发协程最多 20 个
+
+2018/02/24 11:23:07 [I]  *     默认随机停顿 150~600 毫秒
+
+2018/02/24 11:23:07 [P]  *                                                                                                 —— 开始抓取，请耐心等候 ——
+2018/02/24 11:23:07 [I]  *********************************************************************************************************************************** 
+2018/02/24 11:23:07 [D]  *     Start: https://www.lagou.com/zhaopin/go/?filterOption=3
+2018/02/24 11:23:07 [I]  *     Success: https://www.lagou.com/zhaopin/go/?filterOption=3
+
+2018/02/24 11:23:08 [D]  *     Start: https://www.lagou.com/zhaopin/go/2/
+2018/02/24 11:23:08 [I]  *     Success: https://www.lagou.com/zhaopin/go/2/
+
+2018/02/24 11:23:08 [D]  *     Start: https://www.lagou.com/zhaopin/go/3/
+2018/02/24 11:23:09 [I]  *     Success: https://www.lagou.com/zhaopin/go/3/
+
+2018/02/24 11:23:09 [D]  *     Start: https://www.lagou.com/zhaopin/go/4/
+2018/02/24 11:23:09 [I]  *     Success: https://www.lagou.com/zhaopin/go/4/
+
+2018/02/24 11:23:09 [D]  *     Start: https://www.lagou.com/zhaopin/go/5/
+2018/02/24 11:23:10 [I]  *     Success: https://www.lagou.com/zhaopin/go/5/
+
+2018/02/24 11:23:10 [D]  *     Start: https://www.lagou.com/zhaopin/go/6/
+2018/02/24 11:23:10 [I]  *     Success: https://www.lagou.com/zhaopin/go/6/
+
+2018/02/24 11:23:10 [D]  *     Start: https://www.lagou.com/zhaopin/go/7/
+2018/02/24 11:23:11 [I]  *     Success: https://www.lagou.com/zhaopin/go/7/
+
+2018/02/24 11:23:11 [D]  *     Start: https://www.lagou.com/zhaopin/go/8/
+2018/02/24 11:23:12 [I]  *     Success: https://www.lagou.com/zhaopin/go/8/
+
+2018/02/24 11:23:12 [D]  *     Start: https://www.lagou.com/zhaopin/go/9/
+2018/02/24 11:23:12 [I]  *     Success: https://www.lagou.com/zhaopin/go/9/
+
+2018/02/24 11:23:12 [D]  *     Start: https://www.lagou.com/zhaopin/go/10/
+2018/02/24 11:23:13 [I]  *     Success: https://www.lagou.com/zhaopin/go/10/
+
+2018/02/24 11:23:13 [D]  *     Start: https://www.lagou.com/zhaopin/go/11/
+2018/02/24 11:23:13 [I]  *     Success: https://www.lagou.com/zhaopin/go/11/
+
+2018/02/24 11:23:13 [D]  *     Start: https://www.lagou.com/zhaopin/go/12/
+2018/02/24 11:23:14 [I]  *     Success: https://www.lagou.com/zhaopin/go/12/
+
+2018/02/24 11:23:14 [D]  *     Start: https://www.lagou.com/zhaopin/go/13/
+2018/02/24 11:23:14 [I]  *     Success: https://www.lagou.com/zhaopin/go/13/
+
+2018/02/24 11:23:14 [D]  *     Start: https://www.lagou.com/zhaopin/go/14/
+2018/02/24 11:23:15 [I]  *     Success: https://www.lagou.com/zhaopin/go/14/
+
+2018/02/24 11:23:15 [D]  *     Start: https://www.lagou.com/zhaopin/go/15/
+2018/02/24 11:23:15 [I]  *     Success: https://www.lagou.com/zhaopin/go/15/
+
+2018/02/24 11:23:15 [D]  *     Start: https://www.lagou.com/zhaopin/go/16/
+2018/02/24 11:23:16 [I]  *     Success: https://www.lagou.com/zhaopin/go/16/
+
+2018/02/24 11:23:16 [D]  *     Start: https://www.lagou.com/zhaopin/go/17/
+2018/02/24 11:23:16 [I]  *     Success: https://www.lagou.com/zhaopin/go/17/
+
+2018/02/24 11:23:16 [D]  *     Start: https://www.lagou.com/zhaopin/go/18/
+2018/02/24 11:23:17 [I]  *     Success: https://www.lagou.com/zhaopin/go/18/
+
+2018/02/24 11:23:17 [D]  *     Start: https://www.lagou.com/zhaopin/go/19/
+2018/02/24 11:23:17 [I]  *     Success: https://www.lagou.com/zhaopin/go/19/
+
+2018/02/24 11:23:17 [D]  *     Start: https://www.lagou.com/zhaopin/go/20/
+2018/02/24 11:23:18 [I]  *     Success: https://www.lagou.com/zhaopin/go/20/
+
+2018/02/24 11:23:18 [D]  *     Start: https://www.lagou.com/zhaopin/go/21/
+2018/02/24 11:23:18 [I]  *     Success: https://www.lagou.com/zhaopin/go/21/
+
+2018/02/24 11:23:18 [D]  *     Start: https://www.lagou.com/zhaopin/go/22/
+2018/02/24 11:23:19 [I]  *     Success: https://www.lagou.com/zhaopin/go/22/
+
+2018/02/24 11:23:19 [D]  *     Start: https://www.lagou.com/zhaopin/go/23/
+2018/02/24 11:23:19 [I]  *     Success: https://www.lagou.com/zhaopin/go/23/
+
+2018/02/24 11:23:19 [D]  *     Start: https://www.lagou.com/zhaopin/go/24/
+2018/02/24 11:23:20 [I]  *     Success: https://www.lagou.com/zhaopin/go/24/
+
+2018/02/24 11:23:20 [D]  *     Start: https://www.lagou.com/zhaopin/go/25/
+2018/02/24 11:23:20 [I]  *     Success: https://www.lagou.com/zhaopin/go/25/
+
+2018/02/24 11:23:20 [D]  *     Start: https://www.lagou.com/zhaopin/go/26/
+2018/02/24 11:23:21 [I]  *     Success: https://www.lagou.com/zhaopin/go/26/
+
+2018/02/24 11:23:21 [D]  *     Start: https://www.lagou.com/zhaopin/go/27/
+2018/02/24 11:23:21 [I]  *     Success: https://www.lagou.com/zhaopin/go/27/
+
+2018/02/24 11:23:21 [D]  *     Start: https://www.lagou.com/zhaopin/go/28/
+2018/02/24 11:23:22 [I]  *     Success: https://www.lagou.com/zhaopin/go/28/
+
+2018/02/24 11:23:22 [D]  *     Start: https://www.lagou.com/zhaopin/go/29/
+2018/02/24 11:23:22 [I]  *     Success: https://www.lagou.com/zhaopin/go/29/
+
+2018/02/24 11:23:22 [D]  *     Start: https://www.lagou.com/zhaopin/go/30/
+2018/02/24 11:23:23 [I]  *     Success: https://www.lagou.com/zhaopin/go/30/
+
+2018/02/24 11:23:23 [I]  * 
+2018/02/24 11:23:23 [P]  *     [数据输出：拉勾-岗位 | KEYIN： | 批次：1]   数据 450 条！
+
+2018/02/24 11:23:23 [I]  *     [添加成功记录]: 30 条
+
+2018/02/24 11:23:23 [I]  * 
+2018/02/24 11:23:23 [P]  *     [任务小计：拉勾-岗位 | KEYIN：]   共采集数据 450 条，用时 15.585252873s！
+
+2018/02/24 11:23:23 [I]  * 
+2018/02/24 11:23:23 [I]  *********************************************************************************************************************************** 
+2018/02/24 11:23:23 [I]  * 
+2018/02/24 11:23:23 [P]  *                            —— 本次合计采集【数据 450 条】， 实爬【成功 30 URL + 失败 0 URL = 合计 30 URL】，耗时【15.585275173s】 ——
+2018/02/24 11:23:23 [I]  * 
+2018/02/24 11:23:23 [I]  *********************************************************************************************************************************** 
