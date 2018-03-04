@@ -1,10 +1,10 @@
 package main
 
 import (
-	"sync/atomic"
-	"time"
 	"fmt"
 	"runtime"
+	"sync/atomic"
+	"time"
 )
 
 func main() {
@@ -13,7 +13,7 @@ func main() {
 
 	// 开通50个协程 并发执行任务
 	for i := 0; i < 50; i++ {
-		go func(){
+		go func() {
 			for {
 				// 对计数器每隔1ms 进行一次加一操作
 				atomic.AddUint64(&ops, 1)

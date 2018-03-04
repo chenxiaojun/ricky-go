@@ -19,13 +19,13 @@ func main() {
 	}
 
 	// 给jobs发送任务
-	for i := 0; i <=9; i++ {
+	for i := 0; i <= 9; i++ {
 		jobs <- i
 	}
 	// jobs的任务已经发送完毕，关闭jobs
 	close(jobs)
 
-	for i := 0; i <=9; i++ {
+	for i := 0; i <= 9; i++ {
 		fmt.Println(<-results)
 	}
 	fmt.Printf("Process cost %.2fs\n", time.Since(start).Seconds())

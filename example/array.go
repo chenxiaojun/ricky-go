@@ -29,22 +29,3 @@ func main() {
 	s[2] = "C"
 	fmt.Println(s)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

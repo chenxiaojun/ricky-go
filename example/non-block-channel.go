@@ -30,7 +30,7 @@ func main() {
 	messages := make(chan string)
 	signals := make(chan string)
 
-	select{
+	select {
 	case <-messages:
 		fmt.Println("coming")
 	default:

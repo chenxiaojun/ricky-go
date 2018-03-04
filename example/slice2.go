@@ -13,8 +13,8 @@ func main() {
 	fmt.Println(c, len(s), cap(s))
 	copy(c, s)
 	fmt.Println("cpy:", c, len(c), cap(c))
-	fmt.Printf("%p\n",&s[0])
-	fmt.Printf("%p\n",&c[0])
+	fmt.Printf("%p\n", &s[0])
+	fmt.Printf("%p\n", &c[0])
 	c[2] = "d"
 	fmt.Println(s, c)
 
@@ -34,26 +34,3 @@ func main() {
 	}
 	fmt.Println("2d: ", e)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

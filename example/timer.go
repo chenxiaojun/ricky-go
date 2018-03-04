@@ -1,8 +1,8 @@
 package main
 
 import (
-	"time"
 	"fmt"
+	"time"
 )
 
 func main() {
@@ -10,13 +10,13 @@ func main() {
 	fmt.Println("go")
 
 	// 用来阻塞程序向下执行，知道上面的定时器失效
-	<- timer1.C
+	<-timer1.C
 	fmt.Println("timer 1 expired")
 
 	timer2 := time.NewTimer(time.Second)
 	fmt.Println("go 2")
-	go func(){
-		<- timer2.C
+	go func() {
+		<-timer2.C
 		fmt.Println("timer 2 expired")
 	}()
 	// 取消掉定时器

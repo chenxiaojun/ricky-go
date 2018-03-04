@@ -2,9 +2,9 @@ package main
 
 import "fmt"
 
-type user struct {  // 定一个结构体集合类型
+type user struct { // 定一个结构体集合类型
 	name string
-	age int
+	age  int
 }
 
 type myInt int // 定义一个自己的类型

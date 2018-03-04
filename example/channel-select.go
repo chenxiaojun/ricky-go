@@ -24,9 +24,9 @@ func main() {
 
 	for i := 0; i < 2; i++ {
 		select {
-		case msg1 := <- c1:
+		case msg1 := <-c1:
 			fmt.Println(msg1)
-		case msg2 := <- c2:
+		case msg2 := <-c2:
 			fmt.Println(msg2)
 		}
 	}

@@ -9,10 +9,9 @@ func ping(pings chan<- string, msg string) {
 
 // pong函数允许通道pings来接收数据，另一通道pongs来发送数据
 func pong(pings <-chan string, pongs chan<- string) {
-	msg := <- pings
+	msg := <-pings
 	pongs <- msg
 }
-
 
 func main() {
 	pings := make(chan string, 1)
