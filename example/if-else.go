@@ -17,9 +17,9 @@ func main() {
 	// num is only seem in if branches,and all branches
 	if num := 9; num < 0 {
 		fmt.Println(num, "is negative")
-	}else if num < 10 {
+	} else if num < 10 {
 		fmt.Println(num, "has 1 digit")
-	}else {
+	} else {
 		fmt.Println(num, "has multiple digits")
 	}
 }

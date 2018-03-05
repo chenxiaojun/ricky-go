@@ -7,7 +7,7 @@ func main() {
 	var s int
 	for i <= 10 {
 		s += i
-		i ++
+		i++
 	}
 	fmt.Println(s) // 55
 
@@ -22,7 +22,7 @@ func main() {
 	}
 
 	for k := 0; k < 10; k++ {
-		if k % 2 == 0 {
+		if k%2 == 0 {
 			continue
 		}
 		fmt.Printf("%v ", k) // 1 3 5 7 9
