@@ -1,12 +1,12 @@
 package main
 
 import (
-	"fmt"
 	"errors"
+	"fmt"
 )
 
 type argError struct {
-	arg int
+	arg  int
 	prob string
 }
 

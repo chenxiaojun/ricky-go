@@ -15,7 +15,7 @@ func (r rect) perim() int {
 }
 
 func main() {
-	rect1 := rect{ 2,4 }
+	rect1 := rect{2, 4}
 	fmt.Printf("area:%v\n", rect1.area())
 	fmt.Printf("perim:%v\n", rect1.perim())
 

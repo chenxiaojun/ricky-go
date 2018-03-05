@@ -13,7 +13,7 @@ func main() {
 
 	go f("B")
 
-	go func(flag string){
+	go func(flag string) {
 		for i := 0; i < 2; i++ {
 			fmt.Printf("%s: %d\n", flag, i)
 		}
