@@ -1,12 +1,12 @@
 package main
 
 import (
+	"crypto/md5"
 	"crypto/sha1"
 	"fmt"
-	"crypto/md5"
 )
 
-func main(){
+func main() {
 	s := "sha1 this string"
 	h := sha1.New()
 

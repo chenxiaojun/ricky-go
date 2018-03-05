@@ -1,8 +1,8 @@
 package main
 
 import (
-	"regexp"
 	"fmt"
+	"regexp"
 )
 
 // 正则表达式
@@ -34,29 +34,3 @@ func main() {
 
 	fmt.Println(r.ReplaceAllString("a peach", "<fruit>"))
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

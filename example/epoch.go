@@ -1,11 +1,11 @@
 package main
 
 import (
-	"time"
 	"fmt"
+	"time"
 )
 
-func main(){
+func main() {
 	now := time.Now()
 	secs := now.Unix()
 	nanos := now.UnixNano()

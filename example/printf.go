@@ -10,7 +10,7 @@ type point struct {
 }
 
 func main() {
-	p := point{1, 2 }
+	p := point{1, 2}
 	fmt.Printf("%v\n", p)
 
 	// %+v的格式化输出内容包括结构体的字段名

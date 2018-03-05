@@ -41,26 +41,3 @@ func main() {
 	p("ToLower: ", s.ToLower("TEST"))
 	p("ToUpper: ", s.ToUpper("test"))
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

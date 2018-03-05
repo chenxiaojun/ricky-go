@@ -5,12 +5,12 @@ import (
 	"fmt"
 )
 
-type Person struct{
+type Person struct {
 	Name string
 }
 
 type Response struct {
-	Page int `json:"page"`
+	Page   int `json:"page"`
 	Fruits []string
 }
 
@@ -68,29 +68,11 @@ func main() {
 
 }
 
-type Server struct{
+type Server struct {
 	ServerName string
-	ServerIP string
+	ServerIP   string
 }
 
-type ServerSlice struct{
+type ServerSlice struct {
 	Servers []Server
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
