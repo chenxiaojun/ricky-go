@@ -15,3 +15,4 @@ func main() {
 	fmt.Println(user.GetSign())
 	fmt.Println(user.GetLocation())
 }
+
