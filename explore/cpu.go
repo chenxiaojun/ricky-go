@@ -8,6 +8,7 @@ import (
 )
 
 func main() {
+	runtime.GOMAXPROCS(4)
 	start := time.Now()
 	http.HandleFunc("/test", do)
 	http.ListenAndServe(":8000", nil)
@@ -16,7 +17,6 @@ func main() {
 
 func do(w http.ResponseWriter, r *http.Request) {
 	ch := make(chan int)
-	runtime.GOMAXPROCS(4)
 	for i := 0; i < 1000; i++ {
 		go add(i, ch)
 		<-ch
